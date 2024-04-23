@@ -23,23 +23,32 @@ Artist Booking Platform is a web application built with the MERN stack (MongoDB,
 
 ## Setup Instructions
 
-1. Clone the repository:
+
 
 ```bash
+1. Clone the repository:
+
 git clone https://github.com/your-username/artist-booking-platform.git
 cd artist-booking-platform
-## Setup Instructions (Continued)
 
-6. Configure the backend:
+2. Install dependencies:
 
-- Replace `your-mongodb-connection-url` in the `.env` file with your MongoDB connection URL.
-- Generate a secret key for JWT authentication and replace `your-jwt-secret` in the `.env` file.
+cd backend && npm install
+cd ../frontend && npm install
 
-7. Access the application:
 
-Once both the backend server and frontend development server are running, you can access the application in your web browser at [http://localhost:3000](http://localhost:3000).
+3. Set up environment variables:
+Create a .env file in the backend directory and add the following:
 
-## Folder Structure
+MONGO_URI=your-mongodb-connection-url
+JWT_SECRET=your-jwt-secret
 
-The project structure is as follows:
+
+4.Start the development servers:
+
+# Start the backend server
+cd backend && npm start
+
+# Start the frontend development server
+cd ../frontend && npm start
 
